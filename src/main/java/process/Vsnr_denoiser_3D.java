@@ -107,7 +107,7 @@ public class Vsnr_denoiser_3D {
 			L = fPsi.compute_L(alpha, d1, d2, d3);
 			Double3DArray_3D fy1, fy2, fy3, fAy = new Double3DArray_3D(nbSlices,
 					nbRows, nbCols), aY = new Double3DArray_3D(nbSlices, nbRows,
-					nbCols), nablaF1, nablaF2, nablaF3, q1p, q2p, q3p, b, nq = new Double3DArray_3D(
+					nbCols), nablaF1, nablaF2, nablaF3, q1p, q2p, q3p, nq = new Double3DArray_3D(
 					nbSlices, nbRows, nbCols);
 
 			for (int i = 1; i <= nit; i++) {
@@ -144,7 +144,7 @@ public class Vsnr_denoiser_3D {
 				System.gc();
 
 				// we warn the user that we are denoising
-				IJ.showStatus("Denoising... Iteration n°" + i);
+				IJ.showStatus("Denoising... Iteration nï¿½" + i);
 				IJ.showProgress(i, (nit + 1));
 			}
 

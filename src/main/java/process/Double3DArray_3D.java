@@ -471,8 +471,6 @@ public class Double3DArray_3D {
 	// flambda=fb./(d.*fPsi+alpha); %Complex
 	public Double3DArray_3D computeFlambda(Double3DArray_3D fb, Double3DArray_3D d,
 			Double3DArray_3D fPsi, double alpha) {
-		double value;
-
 		Double3DArray_3D multi_d_fPsi = d.multiply(fPsi);
 		for (int i = 0; i < array.length; i++) {
 			for (int j = 0; j < array[0].length; j++) {
@@ -582,8 +580,7 @@ public class Double3DArray_3D {
 	}
 
 	public double getNorm() {
-		double sumsq = 0, val;
-		int nb = 0;
+		double sumsq = 0;
 		for (int i = 0; i < array.length; i++) {
 			for (int j = 0; j < array[0].length; j++) {
 				for (int k = 0; k < array[0][0].length / 2; k++) {

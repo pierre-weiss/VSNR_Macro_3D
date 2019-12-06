@@ -2,7 +2,6 @@ package views;
 
 import java.awt.AWTEvent;
 import java.awt.Choice;
-import java.awt.Component;
 import java.awt.TextField;
 import ij.gui.DialogListener;
 import ij.gui.GenericDialog;

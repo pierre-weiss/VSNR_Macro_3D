@@ -27,8 +27,8 @@ import java.io.File;
  * 
  * @author benjamin.font
  *
- * Plugin developer : Benjamin Font, Léo Mouly
- * Algorithm : Jérôme Fehrenbach, Pierre Weiss, Corinne Lorenzo 
+ * Plugin developer : Benjamin Font, Lï¿½o Mouly
+ * Algorithm : Jï¿½rï¿½me Fehrenbach, Pierre Weiss, Corinne Lorenzo 
  *
  *         This plugin is used for denoise 3D stacks. To denoise 2d images, use
  *         the VSNR_2D plugin.
@@ -98,34 +98,34 @@ public class Vsnr_Plugin_3D implements PlugInFilter {
 									StackWindow wimg = new StackWindow(
 											this.image);
 									wimg.setTitle("Image");
-									wimg.show();
+									wimg.setVisible(true);
 
 									StackWindow wtv3d = new StackWindow(
 											denoiseTV_3D());
 									wtv3d.setTitle("Denoised Image - TV");
-									wtv3d.show();
+									wtv3d.setVisible(true);
 
 									StackWindow wflt = new StackWindow(
 											this.noiseImage);
 									wflt.setTitle("Filtre");
-									wflt.show();
+									wflt.setVisible(true);
 								}
 								// the algorithm is H1
 								else {
 									StackWindow wimg = new StackWindow(
 											this.image);
 									wimg.setTitle("Image");
-									wimg.show();
+									wimg.setVisible(true);
 
 									StackWindow wh13d = new StackWindow(
 											denoiseH1_3D());
 									wh13d.setTitle("Denoised Image - H1");
-									wh13d.show();
+									wh13d.setVisible(true);
 
 									StackWindow wflt = new StackWindow(
 											this.noiseImage);
 									wflt.setTitle("Filtre");
-									wflt.show();
+									wflt.setVisible(true);
 								}
 							}
 						}
@@ -140,28 +140,28 @@ public class Vsnr_Plugin_3D implements PlugInFilter {
 						if (this.algorithm.equals("TV")) {
 							ImageWindow wimg = new StackWindow(this.image);
 							wimg.setTitle("Image");
-							wimg.show();
+							wimg.setVisible(true);
 
 							ImageWindow wh13d = new StackWindow(denoiseTV_3D());
 							wh13d.setTitle("Denoised Image - TV");
-							wh13d.show();
+							wh13d.setVisible(true);
 
 							ImageWindow wflt = new StackWindow(this.noiseImage);
 							wflt.setTitle("Filtre");
-							wflt.show();
+							wflt.setVisible(true);
 						} else {
 							// the algorithm is H1
 							ImageWindow wimg = new StackWindow(this.image);
 							wimg.setTitle("Image");
-							wimg.show();
+							wimg.setVisible(true);
 
 							ImageWindow wh13d = new StackWindow(denoiseH1_3D());
 							wh13d.setTitle("Denoised Image - H1");
-							wh13d.show();
+							wh13d.setVisible(true);
 
 							ImageWindow wflt = new StackWindow(this.noiseImage);
 							wflt.setTitle("Filtre");
-							wflt.show();
+							wflt.setVisible(true);
 						}
 					}
 				}
